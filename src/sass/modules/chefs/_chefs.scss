@@ -1,0 +1,43 @@
+
+/*chefs cards */
+.chefsCards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.chef-img{
+    position: relative;
+}
+.shape{
+    img{
+        position: absolute;
+        bottom: 0;
+
+    }
+}
+
+.chefs{
+    padding-top: 40px;
+    h1{
+        font-family: amatic;
+    }
+    h6{
+        font-weight:lighter;
+    }
+}
+
+@media (max-width: 425px){
+    .chefs{
+        margin-top: 300px;
+    }
+    .chefsCards{
+        display: flex;
+        flex-direction: column;
+    }
+    .cardmedia{
+        width: 80vw;
+    }
+}

@@ -4,76 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/app.css">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox@3.0.8/dist/css/glightbox.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
   <header>
-    <nav >
-        <div class="logo">
-            <li><img src="./public/images/Capture_d_écran_2024-08-13_230241-removebg-preview.png" width="100px" alt=""></li>
-       </div>
-       <div class="links">
-        <li><a href="" class="active"></a>Home</li>
-        <li><a href=""></a>About</li>
-        <li><a href=""></a>Menu</li>
-        <li><a href=""></a>Events</li>
-        <li><a href=""></a>Chefs</li>
-        <li><a href=""></a>Gallery</li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-            </a>
-            <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">drapdown 1</a></li>
-            <li><a class="dropdown-item" href="#">drapdown 2</a></li>
-            <li><a class="dropdown-item" href="#">drapdown 3</a></li>
-            <li><a class="dropdown-item" href="#">drapdown 4</a></li>
-            <li><a class="dropdown-item" href="#">drapdown 5</a></li>
-            </ul>
-            </li>
-        <li><a href=""></a>Contact</li>
-       </div>
-       <div>
-        <button modal-data="testModal" class="btn1">Login</button>
-
-        <div id="testModal" class="backdrop">
-            <div class="modal-nav">
-                <div class="modal-title">
-                    <h2>Login</h2>
-                </div>
-                <div class="modal-body">
-                    <form id="loginForm">
-                        <div class="form-group">
-                            <label for="username">Username:</label>
-                            <input type="text" id="username" name="username" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password:</label>
-                            <input type="password" id="password" name="password" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="login-btn">Login</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button class="close-modal">Close</button>
-                </div>
-            </div>
+<!--
+    <nav class="pt-3 pb-2">
+        <div class="menu-toggle">
+          <i class="open-menu-icon">☰</i>
         </div>
-        
-        
-       </div>
-    </nav>
+        <div class="logo">
+          <img src="./public/images/Capture_d_écran_2024-08-13_230241-removebg-preview.png" width="100px" alt="Logo">
+        </div>
+        <div class="links">
+          <div class="close-menu">
+            <i class="close-menu-icon"><i class="bi bi-x"></i></i>
+          </div>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Chefs</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <button modal-data="testModal" class="btn1">Login</button>
+          <div id="testModal" class="backdrop">
+            <div class="modal-nav">
+              <div class="modal-title">
+                <h2>Login</h2>
+              </div>
+              <div class="modal-body">
+                <form id="loginForm">
+                  <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="login-btn">Login</button>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button class="close-modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+  -->    
+      
   </header>
 
   <section class="landing-page">
     <div class="leftSide-lp">
         <h1>Enjoy Your Healthy <br> Delicious Food </h1>
-        <p>We are team of talented designers making websites with <br> Bootstrap</p>
+        <p>We are team of talented designers <br> making websites with Bootstrap</p>
          <div class="buttons">
             <button class="book-btn">Book a Table</button>
-            <button class="watch-btn"> <i class="bi bi-play-circle"></i> Watch Video</button>
+            <button class="watch-btn">  <i class="bi bi-play-circle"></i><a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="addVideo">  Watch Video</a></button>
          </div>
     </div>
     <div class="rightSide-lp">
@@ -108,7 +115,10 @@
                 aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br>
                 eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat <br>
                  non proident</div>
-                <img src="./public/images/about-2.jpg" width="500px" class="mt-3" alt="">
+                <div class="image-container">
+                    <img src="./public/images/about-2.jpg" width="500px" class="mt-3" alt="">
+                    <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="play-button addVideo"></a>
+                </div>
          </div>
         </div>
 
@@ -141,15 +151,97 @@
         <div><p>32</p>Workers</div>
   </div>
   </section>
-  <section class="testimonial">
 
-  </section>
+<section class="menu">
+    <h6 class="text-center pt-5">Our Menu</h6>
+    <h1 class="text-center pt-3 pb-4 h1test">Check Our <span class="text-danger">Yummy Menu</span> </h1>
+    
+    <div class="menu-content">
+        <div class="menu-Buttons text-center">
+            <button id="starters">Starters</button>
+            <button id="breakfast">Breakfast</button>
+            <button id="lunch">Lunch</button>
+            <button id="dinner">Dinner</button>
+    </div>
+
+
+<div class="menu-content container">
+
+    <p class="menu-title text-center pt-5">Menu</p>
+    <p class="change text-center">Starters</p>
+
+
+ <div class="menu-items d-flex justify-content-center gap-5 pt-5">
+            <div class="menu-item pe-5">
+                <img src="./public/images/menu/menu-item-1.png" class="pb-3" width="240px" alt="Magnam Tiste">
+                <h3 class="item-title text-center">Magnam Tiste</h3>
+                <p class="item-description">Lorem, deren, trataro, filede, nerada</p>
+                <p class="text-center text-danger fw-bold fs-4">$5.95</p>
+            </div>
+            <div class="menu-item pe-5">
+                <img src="./public/images/menu/menu-item-2.png" class="pb-3" width="240px" alt="Aut Luia">
+                <h3 class="item-title text-center">Aut Luia</h3>
+                <p class="item-description">Lorem, deren, trataro, filede, nerada</p>
+                <p class="text-center text-danger fw-bold fs-4">$8.10</p>
+            </div>
+            <div class="menu-item pe-5">
+                <img src="./public/images/menu/menu-item-3.png" class="pb-3" width="240px" alt="Est Eligendi">
+                <h3 class="item-title text-center">Est Eligendi</h3>
+                <p class="item-description">Lorem, deren, trataro, filede, nerada</p>
+                <p class="text-center text-danger fw-bold fs-4">$5.88</p>
+            </div>
+        </div>
+       <div class="menu-items d-flex justify-content-center gap-5 pb-5 pt-3">
+           <div class="menu-item pe-5">
+                <img src="./public/images/menu/menu-item-5.png" class="pb-3" width="240px" alt="Eos Luibusdam">
+                <h3 class="item-title text-center">Eos Luibusdam</h3>
+                <p class="item-description">Lorem, deren, trataro, filede, nerada</p>
+                <p class="text-center text-danger fw-bold fs-4">$10.6</p>
+            </div>
+            <div class="menu-item pe-5">
+                <img src="./public/images/menu/menu-item-6.png" class="pb-3" width="240px" alt="Laboriosam Direva">
+                <h3 class="item-title text-center">Laboriosam Direva</h3>
+                <p class="item-description">Lorem, deren, trataro, filede, nerada</p>
+                <p class="text-center text-danger fw-bold fs-4">$6.30</p>
+            </div>
+            <div class="menu-item pe-5">
+                <img src="./public/images/menu/menu-item-4.png" class="pb-3" width="240px" alt="Laboriosam Direva">
+                <h3 class="item-title text-center">Laboriosam Direva</h3>
+                <p class="item-description">Lorem, deren, trataro, filede, nerada</p>
+                <p class="text-center text-danger fw-bold fs-4">$5.50</p>
+            </div>
+       </div>
+</div>
+       
+           
+    </div>
+</section>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
   <script src="./public/js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox@3.0.8/dist/js/glightbox.min.js"></script>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
